@@ -64,11 +64,11 @@ namespace JokesGenerator.Services.Printer
         /// <param name="message"></param>
         public void PrintBanner(string message)
         {
-            _printer.Value("*****************************************************************************************************", false).ToString();
+            _printer.Value("********************************************************************************************************************", false).ToString();
             _printer.Value("").ToString();
-            _printer.Value("                                       " + message + "                                               ", false).ToString();
+            _printer.Value("                                           " + message + "                                                   ", false).ToString();
             _printer.Value("").ToString();
-            _printer.Value("*****************************************************************************************************", false).ToString();
+            _printer.Value("********************************************************************************************************************", false).ToString();
         }
     }
 }
