@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
-namespace ConsoleApp1
+namespace JokesGenerator.Helpers
 {
     public class ConsolePrinter
     {
         public static object PrintValue;
 
-        public ConsolePrinter Value(string value)
+        public ConsolePrinter Value(string value, bool isNewLineReq = true)
         {
-            PrintValue = value;
+            PrintValue = (isNewLineReq ? "\n" : "") + value;
             return this;
         }
 
